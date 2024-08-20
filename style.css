@@ -38,3 +38,35 @@ h1 {
     justify-content: center;
     margin-top: 1rem;
 }
+
+/* Custom CSS */
+a {
+    text-decoration: none;
+    font-size: 1rem; /* Base font size */
+    transition: transform 0.5s ease, font-size 0.5s ease, margin-right 0.5s ease;
+}
+  
+
+a:hover {
+  font-size: 1.25rem; /* Increase the font size on hover */
+  transform: translateY(-5px); /* Slightly lift the text */
+}
+
+/* Optional: Adjust spacing between links on hover */
+.flex a {
+  margin-right: 0.5rem;
+}
+
+.flex a:hover {
+  margin-right: 1rem; /* Increase spacing on hover */
+}
+/* Custom CSS */
+.flex a {
+  margin: 0; /* Ensure no default margin is affecting spacing */
+}
+
+.flex {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  gap: 1rem; /* Apply consistent spacing between items */
+}
