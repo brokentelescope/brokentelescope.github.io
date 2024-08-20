@@ -1,31 +1,14 @@
-@font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-}
-@font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-    font-style: italic, oblique;
-}
-@font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-    font-weight: bold;
-    font-style: italic, oblique;
-}
-
 body {
     overflow: hidden;
     background-color: rgb(248, 248, 248);
+    font-family: 'Computer Modern', serif;
+    margin: 0;
+    padding: 0;
 }
 
 .center {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -33,9 +16,25 @@ body {
 
 h1 {
     color: rgb(204, 204, 204);
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.element {
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease; /* Smooth transition */
 }
 
 .element:hover {
-    color:rgb(54, 54, 54);
-    transition: color 0.3s ease; /* Smooth transition */
+    color: rgb(54, 54, 54);
+}
+
+.links {
+    display: flex;
+    flex-direction: row; /* Place links in a row */
+    justify-content: center;
+    margin-top: 1rem;
 }
